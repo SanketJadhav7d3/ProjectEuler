@@ -1,1 +1,0 @@
-# ProjectEuler-100-Challenges
