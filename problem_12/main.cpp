@@ -1,6 +1,8 @@
 
 #include <iostream>
 #include <vector>
+#include <stdlib.h>
+#include <thread>
 using namespace std;
 
 int getTriangleNumber(int i) {
@@ -33,16 +35,18 @@ void getDivisors(int n) {
 }
 
 int main() {
-    int t;
+    int t; 
     int count;
 
-    for (int i = 10000; i < 13000; ++i) {
-
+    for (int i = 0; i < 13000; ++i) {
         t = getTriangleNumber(i);
         count = getDivisorCount(t);
 
-        cout << t << " " << count << endl;
+        cout << count << endl;
+        if (count > 500) {
+            cout << "Answer: " << count << endl;
+            break;
+        }
     }
-
     return 0;
 }
