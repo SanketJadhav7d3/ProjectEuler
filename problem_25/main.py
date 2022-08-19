@@ -9,7 +9,7 @@ if __name__ == '__main__':
     digit_count = 0
     index = 2
 
-    while digit_count <= 1000:
+    while digit_count < 1000:
 
         fib = a + b
         a = b
@@ -21,6 +21,4 @@ if __name__ == '__main__':
 
         digit_count = get_digits(fib)
 
-        if (digit_count == 1000):
-            print("Answer: ", index)
-            break
+    print("Answer: ", index)
