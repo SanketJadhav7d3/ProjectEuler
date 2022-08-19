@@ -22,7 +22,6 @@ int main() {
 
     cout << "Answer: " << s << endl;
 
-
     return 0;
 }
 
